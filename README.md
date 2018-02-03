@@ -1,4 +1,8 @@
 # 02a-Exercises-Functions-and-Dictionaries
+This is my response to Exercise 02a. 
+Blake Miller.
+
+---
 
 Here are some exercises to help you learn about Python functions, sets, and dictionaries. This is the second set of exercises for ILS-Z399. To complete these exercises:
 
