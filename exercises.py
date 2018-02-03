@@ -16,9 +16,12 @@ s = 0
 for e in example_list:
 	s += e
 print(s)
-#
+# 38
 # What do these five lines of code do?
-#
+# first line initializes a list with three integer elements
+# second line initializes s as zero
+# third line begins a for loop, adding each element in example list to s
+# last line prints s
 
 # --------------------------------------------------
 
@@ -33,15 +36,17 @@ example_set = example_set - example_set_2
 print(example_set)
 set_to_list = list(example_set)
 print(set_to_list)
-#
-#
-#
-#
+# {1, 2, 3, 4}
+# 3 is in the set
+# 4 is in the set
+# {1, 2, 3}
+# [1, 2, 3]
 #
 # What qualities of a python set do you see in the (above) example?
-#
+#  They can be subtracted from one another, converted to lists, and are non-repeating  
+
 # In what situations might a python set be a useful data structure?
-#
+#  Checking for duplicates in a list and removing them
 
 # --------------------------------------------------
 
@@ -55,15 +60,23 @@ students = ['James','Paige','George','Ruth','Gwen','Claire']
 example_dictionary['students'] = students
 print(example_dictionary)
 print(example_dictionary['students'][2])
-#
+#{'class': 'Z-399', 'teacher': 'Jason Francis', 'time': 9.0, 5: 12345}
+# 12345
+# {'class': 'Z-399', 'teacher': 'Jason Francis', 'time': '9:00', 5: 12345}
+# {'class': 'Z-399', 'teacher': 'Jason Francis', 'time': '9:00', 5: 12345, 'students': ['James', 'Paige', 'George', 'Ruth', 'Gwen', 'Claire']}
+# George
 #
 #
 #
 #
 # What qualities of a python dictionary do you see in the (above) example?
-#
+# can modify one element at a time
+# can be printed
+# can be added to
+# can contain different data types
+
 # Write a python dictionary that might describe a bicycle. I'll get you started. Think about what qualities a bicycle could have (top speed, mileage, pedals, seat height, etc)
-bicycle = { 'color':'', 'wheels':[] }
+bicycle = { 'color':'', 'wheels':[], 'gearCount':'', 'wheelType':''}
 
 # --------------------------------------------------
 
@@ -77,11 +90,12 @@ r = product_list([1,2,3])
 print(r)
 print(product_list([2,5,6]))
 print(product_list([-2,3,-4,5,-6]))
-#
-#
-#
+# 6
+# 60
+# -720
 # What is happening in the (above) example?
-#
+#  The function product_list goes through a list and multiplies all the elements by each other
+#  The example just has a few runs of it
 
 # --------------------------------------------------
 
@@ -108,18 +122,19 @@ for y in years:
 		print(str(y) + ': I get an extra day this year!')
 	else:
 		print(str(y) + ': Just 365 for me')
-#
-#
-#
-#
-#
+# 2017: Just 365 for me
+# 2018: Just 365 for me
+# 2000: I get an extra day this year!
+# 2100: Just 365 for me
+# 2400: I get an extra day this year!
+# This isn't even a year: Just 365 for me
 #
 # What is happening in the (above) example?
-#
+#  This function checks if a year has a leap day.
 # What is the purpose for the multi-line comment at the beginning of the is_leap_year function?
-#
+#  This comment serves to document the use of the function.
 # What happens if you pass a value to the function that isn't a year? Why?
-#
+#  Leap is just false and it prints Just 365 because of the function's use of TypeError
 
 # --------------------------------------------------
 
@@ -146,23 +161,27 @@ for i in range(0,10):
 	else:
 		print(i)
 #
+#0: fizzbuzz
+#1
+#2: buzz
+#3: fizz
+#4: buzz
+#5
+#6: fizzbuzz
+#7
+#8: buzz
+#9: fizz
 #
-#
-#
-#
-#
-#
-#
-#
-#
+
 # What is happening in this example?
-#
+# This function is a classic exercise in fizzbuzz. if a number is divisible by 2, prints buzz..
+#   If it's divisible by 3, prints fizz, and if both prints fizzbuzz
 # How would you alter the program so that it prints fizz on multiples of 5 and buzz on multiples of 4?
-#
+#  edit the is_buzz function and the is_fizz functions to % by 5 and % by 4
 # We actually don't want the program to print fizzbuzz when i <= 0. How would you fix this problem?
-#
+#  remove the first if in the function and turn the first elif into an if
 # How would you alter the program so that it prints your name whenever both conditions are met?
-#
+#  change fizzbuzz to "blake"
 
 # --------------------------------------------------
 
@@ -219,10 +238,10 @@ script = [
 starting = 0
 get_option(script[starting]['options'])
 # What is happening in this block of code?
-#
+#  This function attempts to work through a choose-your-own-adventure game
 # What does the get_option function do?
-#
+#  displays information from the script list
 # How would you display the description of the current location?
-#
+#  print the option from the dictionary of script
 # How would you display the description of the next location (after selecting an option)?
-#
+# run the function again with new choice
